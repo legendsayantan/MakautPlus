@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Makaut+",
+  "version": "1.0.0",
+  "description": "Makaut+ by legendsayantan. Fixes small issues with makaut portal.",
+  "author":"legendsayantan@gmail.com",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Makaut+"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://makaut1.ucanapply.com/*"
+      ],
+      "css": [],
+      "js": [
+        "makaut1-ucanapply.js"
+      ],
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://makauttest2.ucanapply.com/*"
+      ],
+      "css": [],
+      "js": [
+        "makauttest2-ucanapply.js"
+      ],
+      "world": "MAIN"
+    }
+  ]
+}
